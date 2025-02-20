@@ -1,7 +1,6 @@
 services:
   - type: web
     name: bytebase
-    region: singapore
     env: docker
     plan: free
     dockerfilePath: ./Dockerfile
@@ -14,6 +13,4 @@ services:
           property: connectionString
 databases:
   - name: bytebase-metadb
-    region: singapore
     plan: free
-    postgresMajorVersion: 15
